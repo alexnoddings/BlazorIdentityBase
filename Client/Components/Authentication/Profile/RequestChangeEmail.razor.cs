@@ -11,7 +11,7 @@ namespace BlazorIdentityBase.Client.Components.Authentication.Profile
     public partial class RequestChangeEmail
     {
         [Inject]
-        private IdentityAuthenticationStateProvider AuthenticationProvider { get; set; }
+        private IdentityAuthenticationStateProvider AuthenticationProvider { get; set; } = default!;
 
         private class RequestChangeEmailModel : RequestChangeEmailRequest
         {
